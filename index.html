@@ -705,14 +705,13 @@
             margin-bottom: 20px;
         }
         
-        .video-container video {
+        .video-container iframe, .video-placeholder {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border-radius: 0;
-            object-fit: cover;
         }
         
         .video-description {
@@ -1066,7 +1065,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             padding: 15px;
             width: 280px;
-            z-index: 999; /* Increased z-index to ensure it appears on top */
+            z-index: 100;
             margin-top: 10px;
             opacity: 0;
             transform: translateY(-10px);
@@ -1284,11 +1283,11 @@
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>AI Storytelling YouTube Channel Editor & Manager</h3>
+                        <h3>AI Storytelling YouTube Channel Manager</h3>
                         <div class="date">Freelance</div>
-                        <ul style="position: relative; z-index: 1;">
+                        <ul>
                             <li>Created and managed a YouTube channel dedicated to AI storytelling content. 
-                                <span class="youtube-link-container" id="channelContainer" style="position: relative; z-index: 1000;">
+                                <span class="youtube-link-container" id="channelContainer">
                                     <a href="javascript:void(0);" class="view-channel-link" id="viewChannelBtn">View Channel</a>
                                     <div class="youtube-hover-box" id="channelBox">
                                         <div class="youtube-links">
@@ -1327,14 +1326,14 @@
                 </div>
             </div>
             
-            <!-- Video Showcase from Local Storage -->
+            <!-- YouTube Video Showcase -->
             <div class="youtube-showcase reveal" id="my-work">
                 <h3>Featured Project</h3>
                 <div class="video-container">
                     <!-- Replace VIDEO_ID with your actual YouTube video ID -->
-                    <iframe src="https://youtu.be/embed/_raPr7zl808" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://youtu.be/_raPr7zl808" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <p class="video-description">This is one of my best workds</p>
+                <p class="video-description">This is a sample of my work in AI storytelling and digital content creation. The video showcases my skills in scriptwriting, simple video editing, and creative storytelling using AI tools.</p>
             </div>
         </div>
     </section>
